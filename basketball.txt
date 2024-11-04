@@ -1,0 +1,26 @@
+begin%MLPQ%
+court(id, x, y) :- id=1, x > 0, x < 200, y > 0, y < 188.
+
+courtMarking(id, x, y) :- id=1, x = 200, y > 0, y < 188.
+courtMarking(id, x, y) :- id=1, x = 0, y > 0, y < 188.
+courtMarking(id, x, y) :- id=1, y = 0, x > 0, x < 200.
+courtMarking(id, x, y) :- id=1, y = 188, x > 0, x < 200.
+
+courtMarking(id, x, y) :- id=2, y = 12, x > 144, x < 200.
+courtMarking(id, x, y) :- id=2, y = 176, x > 144, x < 200.
+
+teamOneIndicator(id, x, y, t) :-
+  id = 1,
+  x - t > 7, x - t < 13,
+  y - t > 7, y - t < 13,
+  t >= 0,
+  t <= 100.
+
+teamOnePlayer(id, name, position, height, weight) :-
+  id = 1,
+  name = "James",
+  position = "SF",
+  height = 81,
+  weight = 250.
+
+end%MLPQ%
