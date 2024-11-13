@@ -9,68 +9,108 @@ courtMarking(id, x, y) :- id=1, y = 188, x > 0, x < 200.
 courtMarking(id, x, y) :- id=2, y = 12, x > 144, x < 200.
 courtMarking(id, x, y) :- id=2, y = 176, x > 144, x < 200.
 
+team(id, teamName) :-
+  id = 1,
+  teamName = "Ballers".
 
-teamOneIndicator(id, x, y, t) :-
+team(id, teamName) :-
+  id = 2,
+  teamName = "Legends".
+
+playerIndicator(id, x, y, t) :-
   id = 1,
   x - 0.25t > 7, x - 0.25t < 13,
   y - 0.25t > 7, y - 0.25t < 13,
   t >= 0,
   t <= 100.
 
-teamOneIndicator(id, x, y, t) :-
+playerIndicator(id, x, y, t) :-
   id = 2,
   x - t > 25, x - t < 31,
   y - t > 25, y - t < 31,
   t >= 0,
   t <= 100.
 
-teamTwoIndicator(id, x, y, t) :-
-  id = 2,
+playerIndicator(id, x, y, t) :-
+  id = 3,
+  x - t > 30, x - t < 36,
+  y - t > 25, y - t < 31,
+  t >= 0,
+  t <= 100.
+
+playerIndicator(id, x, y, t) :-
+  id = 4,
   x + t > 187, x + t < 193,
   y + t > 175, y + t < 181,
   t >= 0,
   t <= 100.
 
-teamOnePlayer(id, name, position, height, weight) :-
+playerIndicator(id, x, y, t) :-
+  id = 5,
+  x + t > 192, x + t < 198,
+  y + t > 181, y + t < 187,
+  t >= 0,
+  t <= 100.
+
+ball(id, x, y, t) :-
   id = 1,
+  x - t > 25, x - t < 31,
+  y - t > 25, y - t < 31,
+  t >= 0,
+  t <= 100.
+
+player(id, teamID, name, position, height, weight, jersey) :-
+  id = 1,
+  teamID = 1,
   name = "James",
   position = "SF",
   height = 81,
-  weight = 250.
+  weight = 250,
+  jersey = 23.
 
-teamOnePlayer(id, name, position, height, weight) :-
+player(id, teamID, name, position, height, weight, jersey) :-
   id = 2,
+  teamID = 1,
   name = "Davis",
   position = "PF",
   height = 82,
-  weight = 253.
+  weight = 253,
+  jersey = 3.
 
-teamOnePlayer(id, name, position, height, weight) :-
+player(id, teamID, name, position, height, weight, jersey) :-
   id = 3,
+  teamID = 1,
   name = "Curry",
   position = "PG",
   height = 75,
-  weight = 185.
+  weight = 185,
+  jersey = 30.
 
-teamTwoPlayer(id, name, position, height, weight) :-
-  id = 1,
+player(id, teamID, name, position, height, weight, jersey) :-
+  id = 4,
+  teamID = 2,
   name = "Durant",
   position = "SF",
   height = 82,
-  weight = 240.
+  weight = 240,
+  jersey = 35.
 
-teamTwoPlayer(id, name, position, height, weight) :-
-  id = 2,
+player(id, teamID, name, position, height, weight, jersey) :-
+  id = 5,
+  teamID = 2,
   name = "Harden",
   position = "SG",
   height = 77,
-  weight = 220.
+  weight = 220,
+  jersey = 1.
 
-teamTwoPlayer(id, name, position, height, weight) :-
-  id = 3,
+player(id, teamID, name, position, height, weight, jersey) :-
+  id = 6,
+  teamID = 2,
   name = "Irving",
   position = "PG",
   height = 74,
-  weight = 195.
+  weight = 195,
+  jersey = 11.
 
 end%MLPQ%
