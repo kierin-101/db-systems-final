@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW playersAt50
+
+SELECT p.id, p.x, p.y, p.t
+
+FROM playerIndicator AS p
+
+WHERE p.t=50
+
+end %basic%

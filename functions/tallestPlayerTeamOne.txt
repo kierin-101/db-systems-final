@@ -1,0 +1,19 @@
+begin %NEST%
+
+CREATE_VIEW tallestPlayerTeamOne
+
+SELECT1 p1.name, p1.height, p1.teamID
+
+FROM1 player AS p1
+
+WHERE1 p1.teamID=1, p1.height
+
+OPERATOR >= all
+
+SELECT2 p2.height
+
+FROM2 player AS p2
+
+WHERE2 p2.teamID=1
+
+end %NEST%

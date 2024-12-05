@@ -24,43 +24,43 @@ team(id, teamName) :-
 
 playerIndicator(id, x, y, t) :-
   id = 1,
-  x - 0.25t > 7, x - 0.25t < 13,
-  y - 0.25t > 7, y - 0.25t < 13,
+  x - 0.25t = 1300,
+  y - 0.25t = 3200,
   t >= 0,
   t <= 100.
 
 playerIndicator(id, x, y, t) :-
   id = 2,
-  x - t > 25, x - t < 31,
-  y - t > 25, y - t < 31,
+  x - t = 1325,
+  y - t = 3225,
   t >= 0,
   t <= 100.
 
 playerIndicator(id, x, y, t) :-
   id = 3,
-  x - t > 30, x - t < 36,
-  y - t > 25, y - t < 31,
+  x - t = 1350,
+  y - t = 3225,
   t >= 0,
   t <= 100.
 
 playerIndicator(id, x, y, t) :-
   id = 4,
-  x + t > 187, x + t < 193,
-  y + t > 175, y + t < 181,
+  x + t = 1200,
+  y + t = 3225,
   t >= 0,
   t <= 100.
 
 playerIndicator(id, x, y, t) :-
   id = 5,
-  x + t > 192, x + t < 198,
-  y + t > 181, y + t < 187,
+  x + t = 1150,
+  y + t = 3125,
   t >= 0,
   t <= 100.
 
 ball(id, x, y, t) :-
   id = 1,
-  x - t > 25, x - t < 31,
-  y - t > 25, y - t < 31,
+  x - t = 1100,
+  y - t = 3200,
   t >= 0,
   t <= 100.
 

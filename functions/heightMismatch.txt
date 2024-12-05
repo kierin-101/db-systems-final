@@ -1,0 +1,19 @@
+begin %SET%
+
+CREATE_VIEW heightMismatch
+
+SELECT1 p1_name, p1_teamID
+
+FROM1 tallestPlayerTeamOne
+
+WHERE1 
+
+INTUNION UNION
+
+SELECT2 p1_name, p1_teamID
+
+FROM2 shortestPlayerTeamTwo
+
+WHERE2 
+
+end %SET%

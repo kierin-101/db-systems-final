@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW playerInTwoPointAtT25
+
+SELECT p.id, p.x, p.y
+
+FROM playerIndicator AS p, twoPointArea AS tpa
+
+WHERE p.t=25, p.x=tpa.x, p.y=tpa.y
+
+end %basic%

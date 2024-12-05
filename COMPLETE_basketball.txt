@@ -1,0 +1,333 @@
+begin%savefile%
+court(id, x, y) :- 
+id=1, 
+-x+2y<=5890, 
+-x<=-944, 
+x-0.005348y<=927.721924.
+
+
+court(id, x, y) :- 
+id=2, 
+-x+0.005348y<=-927.721924, 
+-y<=-3044, 
+x+0.935829y<=4144.663086.
+
+
+court(id, x, y) :- 
+id=3, 
+-x-0.935829y<=-4144.663086, 
+x<=1296, 
+-x+350y<=1195354.
+
+
+twoPointArea(id, x, y) :- 
+id=1, 
+-x-0.127273y<=-1487.963623, 
+-x-0.578947y<=-2921.579102, 
+x+0.357143y<=2230.214355.
+
+
+twoPointArea(id, x, y) :- 
+id=2, 
+x+1.341463y<=5408.585449, 
+-x-0.357143y<=-2230.214355, 
+-x-3.461538y<=-11906.615234.
+
+
+twoPointArea(id, x, y) :- 
+id=3, 
+x+1.048781y<=4511.512207, 
+-x+0.121951y<=-683.219543, 
+-x-1.341463y<=-5408.585449.
+
+
+twoPointArea(id, x, y) :- 
+id=4, 
+-x+6.608696y<=21130.912109, 
+-x+0.643564y<=1022.455444, 
+x-1.750000y<=-4640.500000.
+
+
+twoPointArea(id, x, y) :- 
+id=5, 
+-x+0.347826y<=55.391304, 
+x-0.643564y<=-1022.455444, 
+-x+0.890909y<=1856.254639.
+
+
+twoPointArea(id, x, y) :- 
+id=6, 
+x+111.999992y<=381426.968750, 
+-x+1.666667y<=4471.333008, 
+x-6.608696y<=-21130.912109.
+
+
+twoPointArea(id, x, y) :- 
+id=7, 
+-x+1.107143y<=2585.178711, 
+-x+0.666667y<=1112.666626, 
+x-0.890909y<=-1856.254639.
+
+
+twoPointArea(id, x, y) :- 
+id=8, 
+x+y<=4693, 
+y<=3395, 
+-x-111.999992y<=-381426.968750.
+
+
+twoPointArea(id, x, y) :- 
+id=9, 
+-y<=-3065, 
+x+3.461538y<=11906.615234, 
+-x-1.365385y<=-5372.903809.
+
+
+twoPointArea(id, x, y) :- 
+id=10, 
+x-0.006079y<=1278.367798, 
+-x+1.750000y<=4640.500000, 
+-x-1.048781y<=-4511.512207.
+
+
+team(id, teamName) :- 
+id=1, 
+teamName="Ballers".
+
+
+team(id, teamName) :- 
+id=2, 
+teamName="Legends".
+
+
+playerIndicator(id, x, y, t) :- 
+id=1, 
+x-0.250000t=1300, 
+y-0.250000t=3200, 
+-t<=0, 
+t<=100.
+
+
+playerIndicator(id, x, y, t) :- 
+id=2, 
+x-t=1325, 
+y-t=3225, 
+-t<=0, 
+t<=100.
+
+
+playerIndicator(id, x, y, t) :- 
+id=3, 
+x-t=1350, 
+y-t=3225, 
+-t<=0, 
+t<=100.
+
+
+playerIndicator(id, x, y, t) :- 
+id=4, 
+x+t=1200, 
+y+t=3225, 
+-t<=0, 
+t<=100.
+
+
+playerIndicator(id, x, y, t) :- 
+id=5, 
+x+t=1150, 
+y+t=3125, 
+-t<=0, 
+t<=100.
+
+
+ball(id, x, y, t) :- 
+id=1, 
+x-t=1100, 
+y-t=3200, 
+-t<=0, 
+t<=100.
+
+
+player(id, teamID, name, position, height, weight, jersey) :- 
+id=1, 
+teamID=1, 
+name="James", 
+position="SF", 
+height=81, 
+weight=250, 
+jersey=23.
+
+
+player(id, teamID, name, position, height, weight, jersey) :- 
+id=2, 
+teamID=1, 
+name="Davis", 
+position="PF", 
+height=82, 
+weight=253, 
+jersey=3.
+
+
+player(id, teamID, name, position, height, weight, jersey) :- 
+id=3, 
+teamID=1, 
+name="Curry", 
+position="PG", 
+height=75, 
+weight=185, 
+jersey=30.
+
+
+player(id, teamID, name, position, height, weight, jersey) :- 
+id=4, 
+teamID=2, 
+name="Durant", 
+position="SF", 
+height=82, 
+weight=240, 
+jersey=35.
+
+
+player(id, teamID, name, position, height, weight, jersey) :- 
+id=5, 
+teamID=2, 
+name="Harden", 
+position="SG", 
+height=77, 
+weight=220, 
+jersey=1.
+
+
+player(id, teamID, name, position, height, weight, jersey) :- 
+id=6, 
+teamID=2, 
+name="Irving", 
+position="PG", 
+height=74, 
+weight=195, 
+jersey=11.
+
+
+playerAt25(p_id, p_x, p_y) :- 
+p_x=1306.250000, 
+p_y=3206.250000, 
+p_id=1, 
+p_x-p_y=-1900.
+
+
+playerAt25(p_id, p_x, p_y) :- 
+p_x=1350, 
+p_y=3250, 
+p_id=2, 
+p_x-p_y=-1900.
+
+
+playerAt25(p_id, p_x, p_y) :- 
+p_x=1375, 
+p_y=3250, 
+p_id=3, 
+p_x-p_y=-1875.
+
+
+playerAt25(p_id, p_x, p_y) :- 
+-p_x=-1175, 
+-p_y=-3200, 
+p_id=4, 
+p_x-p_y=-2025.
+
+
+playerAt25(p_id, p_x, p_y) :- 
+-p_x=-1125, 
+-p_y=-3100, 
+p_id=5, 
+p_x-p_y=-1975.
+
+
+player25buf10(p_id, p_x, p_y) :- 
+p_x+0.414214p_y<=2644.323730, 
+p_x+2.414210p_y<=9070.953125, 
+-p_x+2.414210p_y<=6458.453125, 
+-p_x+0.414214p_y<=31.823637, 
+-p_x-0.414214p_y<=-2624.323730, 
+-p_x-2.414210p_y<=-9022.668945, 
+p_x-2.414210p_y<=-6410.168945, 
+p_x-0.414214p_y<=-11.823638.
+
+
+player25buf10(p_id, p_x, p_y) :- 
+p_x+0.414214p_y<=2706.195557, 
+p_x+2.414210p_y<=9220.324219, 
+-p_x+2.414210p_y<=6520.324707, 
+-p_x+0.414214p_y<=6.195500, 
+-p_x-0.414214p_y<=-2686.195557, 
+-p_x-2.414210p_y<=-9172.040039, 
+p_x-2.414210p_y<=-6472.040527, 
+p_x-0.414214p_y<=13.804500.
+
+
+player25buf10(p_id, p_x, p_y) :- 
+p_x+0.414214p_y<=2731.195557, 
+p_x+2.414210p_y<=9245.324219, 
+-p_x+2.414210p_y<=6495.324707, 
+-p_x+0.414214p_y<=-18.804501, 
+-p_x-0.414214p_y<=-2711.195557, 
+-p_x-2.414210p_y<=-9197.040039, 
+p_x-2.414210p_y<=-6447.040527, 
+p_x-0.414214p_y<=38.804501.
+
+
+player25buf10(p_id, p_x, p_y) :- 
+p_x+0.414214p_y<=2510.484863, 
+p_x+2.414210p_y<=8924.614258, 
+-p_x+2.414210p_y<=6574.614258, 
+-p_x+0.414214p_y<=160.484802, 
+-p_x-0.414214p_y<=-2490.484863, 
+-p_x-2.414210p_y<=-8876.330078, 
+p_x-2.414210p_y<=-6526.330078, 
+p_x-0.414214p_y<=-140.484802.
+
+
+player25buf10(p_id, p_x, p_y) :- 
+p_x+0.414214p_y<=2419.063477, 
+p_x+2.414210p_y<=8633.193359, 
+-p_x+2.414210p_y<=6383.192871, 
+-p_x+0.414214p_y<=169.063400, 
+-p_x-0.414214p_y<=-2399.063477, 
+-p_x-2.414210p_y<=-8584.909180, 
+p_x-2.414210p_y<=-6334.908691, 
+p_x-0.414214p_y<=-149.063400.
+
+
+playerInTwoPointAtT25(p_id, p_x, p_y) :- 
+-p_x=-1175, 
+-p_y=-3200, 
+p_x-0.006079p_y<=1278.367798, 
+-p_x+1.750000p_y<=4640.500000, 
+p_id=4, 
+p_x-p_y=-2025, 
+-p_x-1.048781p_y<=-4511.512207.
+
+
+shortestPlayerTeamTwo(p1_name, p1_height, p1_teamID) :- 
+p1_teamID=2, 
+p1_name="Irving", 
+p1_height=74.
+
+
+tallestPlayerTeamOne(p1_name, p1_height, p1_teamID) :- 
+p1_teamID=1, 
+p1_name="Davis", 
+p1_height=82.
+
+
+heightMismatch(p1_name, p1_teamID) :- 
+p1_teamID=1, 
+p1_name="Davis".
+
+
+heightMismatch(p1_name, p1_teamID) :- 
+p1_teamID=2, 
+p1_name="Irving".
+
+
+end%savefile%
