@@ -1,6 +1,6 @@
 begin %basic%
 
-CREATE_VIEW player6atT30
+CREATE_VIEW findP3atT
 
 SELECT p.id, p.x, p.y, p.t
 
